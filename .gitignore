@@ -1,0 +1,15 @@
+###############################################################################
+## - https://www.toptal.com/developers/gitignore
+## - https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+## - https://github.com/git-guides/git-push
+## - https://linuxize.com/post/gitignore-ignoring-files-in-git/
+###############################################################################
+
+# IDE
+.idea
+
+# Environments
+venv/
+
+# NON-CODE ASSETS
+webdev/
