@@ -1,0 +1,27 @@
+{% extends 'pages/base.html' %}
+
+{% block page_title_tag %} Simple Blog Landing Page {% endblock %}
+{% block page_meta_description %} Place to share lovable content. {% endblock %}
+{% block page_meta_keywords %} blog, love, share {% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="px-4 pt-5 my-3 text-center border-bottom">
+    <!--<p>{{ msg }}</p>-->
+    <h1 class="display-4 fw-bold">My Simple Blog</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">This is a simple blog that I am putting together to place within my portfolio. This blog makes use of the Bootstrap CSS Framework, Django and Python. I also add a lot of cool features that I fee are just critical, well not critical but important for developing online web applications.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+            <img src="{% static 'pages/img/dev_bootstrap-docs.jpg' %}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                 width="700" height="500" loading="lazy">
+        </div>
+    </div>
+</div>
+{% endblock content %}
